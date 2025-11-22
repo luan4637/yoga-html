@@ -27,7 +27,7 @@ body {
 }
 .container.full-width {
   width: 100%;
-  max-width: auto;
+  max-width: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -376,6 +376,17 @@ header menu {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 600px) {
+  .section-intro .yogar {
+    position: static;
+    width: auto;
+  }
+  .section-intro .intro-text {
+    margin-left: 0;
+    padding-right: 1em;
+    height: 37em;
+  }
+}
 .section-full-video {
   text-align: center;
   color: #0059d4;

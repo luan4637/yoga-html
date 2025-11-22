@@ -67,3 +67,17 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .section-intro {
+        .yogar {
+            position: static;
+            width: auto;
+        }
+        .intro-text {
+            margin-left: 0;
+            padding-right: 1em;
+            height: 37em;
+        }
+    }
+}
