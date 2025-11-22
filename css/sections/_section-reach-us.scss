@@ -1,0 +1,105 @@
+.section-reach-us {
+    .section-inner {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #eef5ff;
+        padding: 1.5em 5em;
+    }
+
+    .headline {
+        margin: 0 0 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-left,
+    .section-right {
+        width: 50%;
+        align-self: flex-end;
+    }
+
+    h5 {
+        display: inline-block;
+        margin: 0;
+        padding-bottom: 0.4em;
+        text-transform: uppercase;
+        font-size: 1em;
+        border-bottom: 1px solid #0059d4;
+    }
+
+    p {
+        margin-bottom: 0;
+        line-height: 1.5;
+
+        span {
+            display: inline-block;
+            padding-bottom: 1em;
+            border-bottom: 1px solid #0059d4;
+            
+        }
+
+        &:last-child {
+            span {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+        } 
+    }
+
+    form {
+        display: flex;
+        margin-top: 2em;
+
+        input, button {
+            height: 2.5em;
+            border-radius: 0;
+            font-size: 1em;
+        }
+
+        input {
+            padding: 0 0.5em;
+            border: 1px solid #0059d4;
+            background-color: #fff;
+            color: #0059d4;
+
+            &:focus {
+                border: 1px solid #0059d4;
+                border-radius: 0;
+                outline: none;
+            }
+        }
+        button {
+            border: 0;
+            background-color: #0059d4;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-reach-us {
+        .section-inner {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+
+        .section-left, .section-right {
+            width: 100%;
+            align-self: flex-start;
+        }
+
+        .section-right {
+            margin-top: 1em;
+        }
+
+        form {
+            margin-top: 1em;
+
+            input {
+                flex: 1;
+            }
+        }
+    }
+}

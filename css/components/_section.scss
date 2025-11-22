@@ -1,0 +1,29 @@
+.section {
+    margin-top: 5em;
+
+    &-row {
+        .section-inner {
+            display: flex;
+        }
+
+        .section-left {
+            flex: 3;
+        }
+
+        .section-right {
+            flex: 2;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section {
+        margin-top: 3em;
+        
+        &-row {
+            .section-inner {
+                flex-direction: column;
+            }
+        }
+    }
+}

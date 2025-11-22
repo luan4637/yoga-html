@@ -1,0 +1,49 @@
+.btn {
+    display: inline-block;
+    padding: 0.4em 1.5em;
+    background-color: #fff;
+    border: 1px solid #0059d4;
+    border-radius: 0.3em;
+    text-decoration: none;
+    color: #0059d4;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #0059d4;
+        color: #fff;
+    }
+
+    &-primary {
+        background-color: #0059d4;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: #0059d4;
+        }
+    }
+
+    &-large {
+        padding: 0.7em 3.5em;
+        border-radius: 5em;
+        text-transform: uppercase;
+        background-color: #0059d4;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: #0059d4;
+        }
+    }
+}
+
+.btn-play {
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+
+    &:hover {
+        text-shadow: 0 0 0.3em #fff;
+        color: #0059d4;
+    }
+}

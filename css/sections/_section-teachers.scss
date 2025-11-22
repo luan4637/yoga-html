@@ -1,0 +1,64 @@
+.section-teachers {
+    .headline {
+        margin: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 0 1em 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3, figure {
+                margin: 0;
+            }
+            h3 {
+                padding-left: 5em;
+                width: 70%;
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #0059d4;
+                }
+                span {
+                    display: block;
+                    font-weight: normal;
+                }
+            }
+            figure {
+                width: 30%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-teachers {
+        ul {
+            margin-top: 2em;
+            li {
+                justify-content: center;
+                h3 {
+                    padding-left: 0;
+                    padding-right: 1em;
+                    width: auto;
+                }
+                figure {
+                    width: 8em;
+                }
+            }
+        }
+    }
+}

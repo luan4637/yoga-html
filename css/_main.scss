@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5vw;
+    font-weight: normal;
+    color: #0059d4;
+}
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    position: relative;
+    background-image: url('../images/bg-top-left.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left top;
+}
+.container {
+    margin: 0 auto;
+    width: 92%;
+    max-width: 65em;
+
+    &.full-width {
+        width: 100%;
+        max-width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}

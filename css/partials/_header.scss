@@ -1,0 +1,72 @@
+header {
+    margin-bottom: 1em;
+    padding-top: 2em;
+
+    .container {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        height: 5em;
+    }
+
+    .logo {
+        a {
+            display: inline-block;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .nav-icon {
+        display: none;
+        margin-left: auto;
+        align-self: center;
+        font-size: 2em;
+        cursor: pointer;
+        background-color: #fff;
+
+        & + input[type=checkbox] {
+            display: none;
+        }
+    }
+
+    menu {
+        margin-left: auto;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        .container {
+            height: auto;
+        }
+
+        .logo a {
+            width: 12em;
+        }
+
+        .nav-icon {
+            display: block;
+        }
+
+        menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            z-index: 999;
+            align-self: auto;
+
+            li {
+                display: block;
+            }
+        }
+
+        input[type=checkbox]:checked + menu {
+            display: block;
+        }
+    }
+}

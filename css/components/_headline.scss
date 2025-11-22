@@ -1,0 +1,19 @@
+.headline {
+    font-size: 2em;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #0059d4;
+
+    &-large {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .headline {
+        font-size: 1.5em;
+        &-large {
+            font-size: 2em;
+        }
+    }
+}
